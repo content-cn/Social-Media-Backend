@@ -6,6 +6,7 @@ async function connectMongoDB() {
         let mongoURI;
         if (process.env.NODE_ENV === 'production') {
             mongoURI = process.env.MONGODB_URI_PROD;
+            console.log(mongoURI)
         } else {
             mongoURI = process.env.MONGODB_URI_DEV;
         }
